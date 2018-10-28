@@ -4,7 +4,7 @@
 
 Pepperminty Wiki is a complete wiki contained in a single file, inspired by @am2064's [Minty Wiki](https://github.com/am2064/Minty-Wiki). It's open source too (under MPL-2.0), so contributions are welcome!
 
-Developed by Starbeamrainbowlabs (though contributions from others are welcome!), Pepperminty Wiki has a variety of useful (and cool!) features - such as file upload, a dynamic help page, page revision history, page tags, and more! Other amazing features are in the works too (like a theme gallery, autoupdate, and user watchlists), so check the release notes to see what's been added recently.
+Developed by Starbeamrainbowlabs (though contributions from others are welcome!), Pepperminty Wiki has a variety of useful (and cool!) features - such as file upload, a dynamic help page, page revision history, page tags, and more! Other amazing features are in the works too (like a theme gallery, auto update, and user watchlists), so check the release notes to see what's been added recently.
 
 **Latest Version:** v0.17 (stable) v0.18-dev (development) ([Changelog](https://github.com/sbrl/Pepperminty-Wiki/blob/master/Changelog.md))
 
@@ -13,13 +13,13 @@ Developed by Starbeamrainbowlabs (though contributions from others are welcome!)
  - [Features](#features)
  - [Demo](#demo)
  - [Getting Started](#getting-started)
-	 - [Requirements](#requirements)
-	 - [Getting your own copy](#getting-your-own-copy)
-	 	 - [Method 1: Using the latest pre-built stable release](#method-1-using-the-latest-pre-built-stable-release)
-		 - [Method 2: Grabbing the pre-built verion from the repository](#method-2-grabbing-the-pre-built-verion-from-the-repository)
-		 - [Method 3: Using the online downloader](#method-3-using-the-online-downloader)
-		 - [Method 3.5: Using the downloader offline](#method-35-using-the-downloader-offline)
-		 - [Method 4: Building your own from source](#method-4-building-your-own-from-source)
+     - [Requirements](#requirements)
+     - [Getting your own copy](#getting-your-own-copy)
+          - [Method 1: Using the latest pre-built stable release](#method-1-using-the-latest-pre-built-stable-release)
+         - [Method 2: Grabbing the pre-built verion from the repository](#method-2-grabbing-the-pre-built-verion-from-the-repository)
+         - [Method 3: Using the online downloader](#method-3-using-the-online-downloader)
+         - [Method 3.5: Using the downloader offline](#method-35-using-the-downloader-offline)
+         - [Method 4: Building your own from source](#method-4-building-your-own-from-source)
  - [Configuring](#configuring)
      - [User Accounts](#user-accounts)
  - [API Reference](#api-reference)
@@ -41,12 +41,12 @@ More screenshots can be found in [this Imgur Album](https://imgur.com/a/lsBc3cM)
 - User login system
 - Page creation (Sub pages supported)
 - Markdown-powered syntax
-	- Templating support
-	- Additional syntax for resizing and floating images (see inbuilt help page)
-	- File galleries
-	- Short syntax for referencing uploaded files
-	- Client side mathematical expression parsing, courtesy of [MathJax](https://www.mathjax.org/)
-	- Links to non-existent pages appear red
+    - Templating support
+    - Additional syntax for resizing and floating images (see inbuilt help page)
+    - File galleries
+    - Short syntax for referencing uploaded files
+    - Client-side mathematical expression parsing, courtesy of [MathJax](https://www.mathjax.org/)
+    - Links to non-existent pages appear red
 - Full page revision history (comparison / manipulation coming soon)
 - Optional time-delayed search indexing
 - Simple edit conflict detection
@@ -54,22 +54,22 @@ More screenshots can be found in [this Imgur Album](https://imgur.com/a/lsBc3cM)
 - Internal links - Links to non-existent pages show up in red
 - Printable page view
 - Customisable theme
-- ~~Basic 'search' bar~~ A full text search engine!
-	- _Dynamic server-side suggestions (since v0.13!)_
+- ~~Basic 'search' bar~~ A full-text search engine!
+    - _Dynamic server-side suggestions (since v0.13!)_
 - (Optional) Sidebar with a tree of all the current pages
 - Tags
 - List of all pages and details
-	- List of all tags and pages with any given tag
-	- List of recent changes
+    - List of all tags and pages with any given tag
+    - List of recent changes
 - Inbuilt help page (modules can add their own sections to it)
 - File upload and preview
-	- Simple syntax for including media in a page (explanation on help page)
+    - Simple syntax for including media in a page (explanation on help page)
 - Page protection
 - Simple user settings page (set email address, change password)
 - Threaded page comments (since v0.14)
 - Statistics system - can be extended with modules (since v0.15)
 - Customisable module based system
-	- Allows you to add or remove features at will
+    - Allows you to add or remove features at will
 
 ## Getting Started
 ### Requirements
@@ -133,7 +133,7 @@ The [configuration guide](https://starbeamrainbowlabs.com/labs/peppermint/pepper
 ### User Accounts
 User account details are currently stored as an object in `peppermint.json`, under the `users` special setting. Each user has their own object, in which lies their user data.
 
-While users can change their own passwords and email addresses, you'll inevitably want to add your own users. You can do this through the brand-new user management page if you're logged in as a modereator or better (the `user-table` action - example url: `https://example.com/path/to/index.php?action=user-table`), or manually. Here's how to do it manually:
+While users can change their own passwords and email addresses, you'll inevitably want to add your own users. You can do this through the brand-new user management page if you're logged in as a moderator or better (the `user-table` action - example url: `https://example.com/path/to/index.php?action=user-table`), or manually. Here's how to do it manually:
 
 1. Open `peppermint.json` in your favourite text editor.
 2. Create a new property on the `users` object, whose value is an object and key is the new user's username. Use the existing users for reference.
